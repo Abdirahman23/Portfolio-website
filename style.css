@@ -1,0 +1,704 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-family: "Nunito", sans-serif;
+    line-height: 2rem    ;
+
+}
+body{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #3564fff5;}
+
+li{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 6vh;
+    border-bottom: 1px solid rgb(153, 153, 153);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 98rem;
+  
+    margin: 0 auto;
+    /* padding: 0 1.5rem; */
+    
+  
+
+}
+
+.logo img{
+    width: 3.5rem;
+    height: 3.5rem;
+ 
+}
+
+.mobile-menu i{
+    color: #fafafa;
+    font-size: 3.3rem;
+    margin-top: -2rem;
+    width: 3rem;
+    height: 3rem
+}
+.mobile-menu{
+   
+} 
+
+.close i{
+     
+    color: rgb(206, 206, 206);
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+
+   
+}
+
+
+.nav.show{
+    display: flex;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 0;
+ 
+}
+
+.nav{
+   
+    background:linear-gradient(135deg, rgba(123, 28, 136, 0.9)0% , rgba(72,56,149,0.8)100%) , url(images/mac1.jpg)center no-repeat; background-size: cover;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+     display: flex;
+     flex-direction:column ;
+     transition: 1s ease-in-out;
+     display: none;
+    
+     z-index: 1500;
+    
+}
+
+.nav li{
+    margin-top: 2rem;
+    transition: all 2s ease-in-out;
+}
+
+.nav li a{
+
+    color: rgb(218, 218, 218);
+    transition: 1s ease-in-out;
+
+
+}
+
+.nav li a:hover{
+    color: #ff35bcb6;
+    font-size: 1.4rem;
+    letter-spacing: .3rem;
+}
+
+
+/******************8 Home Page **************/
+
+
+.hero{
+    width: 100%;
+    height: 75vh;
+     background:linear-gradient(135deg, rgba(123, 28, 136, 0.9)0% , rgba(72,56,149,0.8)100%), url("images/mac1.jpg"); 
+    background-size: cover;
+    padding: 5rem 0 ;
+}
+
+
+.hero::before{
+     
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 17rem;
+    bottom: 3rem;
+    left: 0;
+    background: url(images/wave-large.png) center no-repeat;
+    background-size: cover;
+
+}
+
+
+.text{
+    
+     font-size: 1rem;
+     text-transform: uppercase;
+     transform: translateY(50%);
+     font-weight: 100;
+     margin: 0 2rem 0;
+    
+
+     
+    
+     
+   
+}
+
+.text h1 span{
+    font-size:4rem;
+    font-family: "Aldrich", sans-serif;
+    color: #7da6fff5;
+    text-transform: capitalize;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin:3rem 0 1.2rem  ;
+  
+}
+
+
+.text h4{
+    font-size: 2rem;
+    color: #fafafa;
+    font-family: "aldrich",sans-serif;
+    margin: 1.5rem 0;
+
+    
+}
+
+
+.prof{
+
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+    
+}
+.text p{
+    font-size: 1.8rem;
+    color: rgb(255, 218, 218);
+    text-transform: capitalize;
+}
+
+.text a{
+    padding: 10px 20px;
+    border-radius: 40px;
+    background-color:#3564fff5;
+    /* border: 1px solid black; */
+    color: #fafafa;
+    display: inline-block;
+   
+
+
+}
+
+.text a:hover{
+       
+   background-color: rgb(207, 0, 128);
+   letter-spacing: .1rem;
+   transition: .5s ease-in-out;
+}
+
+.hero-image{
+    margin-left: 3rem;
+}
+
+
+
+
+
+/**************************************************** About**********************************************/
+
+.about{
+    padding: 50px 0 0 0;
+    width: 100%;
+}
+
+.about::after{
+    /* content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 17rem;
+    width: 100%;
+    background: url(images/wave-large-reversed.png) center no-repeat;
+    background-size: cover; */
+    
+}
+.about .title{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+.about .title .title-heading{
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 10px 0 0 0;
+    color:  linear-gradient(135deg, rgba(123, 28, 136, 0.9)0% , rgba(72,56,149,0.8)100%);
+    font-family: "Nunito",sans-serif;
+}
+
+.about .title p{
+    font-family: "Aldrich",sans-serif;
+}
+
+.about .row{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0 0 0 ;
+    padding: 50px 
+    
+}
+
+.about .row .col50 {
+    width: 48%;
+    position: relative;
+    
+}
+
+
+.about .row .col50 .img-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.about .row .col50 .img-box img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.col50 h1,p{
+    color: rgba(0, 0, 0, 0.712);
+    font-size: 1.8rem;
+}
+
+.btn{
+    margin: 10PX 0;
+}
+
+.btn a{
+    
+    color: white;
+    padding: 20px 40px;
+    border-radius: 40px;
+    background:linear-gradient(135deg, rgba(123, 28, 136, 0.9)0% , rgba(72,56,149,0.8)100%) ;
+}
+
+.btn a:hover{
+    background:linear-gradient(135deg, rgba(104, 0, 117, 0.9)0% , rgba(35, 8, 168, 0.8)100%)
+}
+
+
+
+/********************************* services ******************************/
+
+.services{
+    padding: 10rem 0;
+    background:linear-gradient(135deg, rgba(123, 28, 136, 0.9)0% , rgba(72,56,149,0.8)100%),url(images/mac1.jpg);
+    height: auto;
+    
+}
+
+ /* .services::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15rem;
+    width: 100%;
+    background: url("images/wave-large-reversed.png");
+    background-size: cover;
+    
+}  */
+
+.services .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services .title .title-heading{
+    color: #fafafa;
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin: 2rem 0 ;
+}
+
+.services .title p{
+    color: #b9abab;
+    font-family: "Aldrich" ,sans-serif;
+}
+    
+
+.services .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services .content .box{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px ;
+    margin: 10px ;
+    background-color: rgb(250, 227, 227);
+    transition: 1s ease-in-out;
+}
+
+.services .content .box .icon{
+    margin: 0 0 2rem;
+}
+
+.services .content .box .icon i{
+    font-size: 5rem;
+   
+}
+
+.services .content .box h3{
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: rgb(88, 13, 95);
+}
+
+ 
+.services .content .box .text p{
+    color: rgba(27, 25, 25, 0.65);
+    font-size: 1.5rem;
+    margin-top: -2.5rem;
+    
+   
+}
+
+.services .content .box:hover{
+    background:linear-gradient(135deg, rgba(206, 206, 206, 0.9)0% , rgba(201, 201, 202, 0.8)100%) , url(images/mac1.jpg)center no-repeat; background-size: cover;
+    color: #fafafa;
+    transform: translateY(-15%);
+}
+
+
+/**************************************** projects ***********************************/
+.Projects{
+    padding: 10rem 0;
+}
+.Projects .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Projects .title .title-heading{
+    color: #777676;
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin: 2rem 0 ;
+}
+
+.Projects .title p{
+
+    color: #b9abab;
+    font-family: "Aldrich" ,sans-serif;
+}
+
+
+.Projects .content{
+    display: flex;
+    justify-content: center;
+ 
+    flex-wrap: wrap;
+}
+
+.Projects .content .box{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px ;
+    background-color: #fafafa;
+    box-shadow: 0 2rem 2rem rgb(230, 222, 230);
+    transition:"background" 1s  ease-in-out;
+    
+}
+
+.Projects .content .box .img-box{
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+.Projects .content .box .img-box img{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s ease-in-out;
+}
+
+.Projects .content .box .text h3{
+       
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.Projects .content .box:hover{
+    background:linear-gradient(135deg, rgba(123, 28, 136, 0.9)0% , rgba(72,56,149,0.8)100%) , url(images/mac1.jpg)center no-repeat; background-size: cover;
+    color: #fafafa;
+}
+
+.Projects .content .box .img-box img:hover{
+    transform: translateY(-15%);
+}
+
+/********************************************me***************************/
+
+.me{
+    padding: 100px 0;
+    width: 100%;
+    background:linear-gradient(135deg, rgba(123, 28, 136, 0.9)0% , rgba(72,56,149,0.8)100%) , url(images/mac1.jpg)center no-repeat; background-size: cover;
+}
+
+.me .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    margin-bottom: 2rem;
+}
+.icon i{
+    font-size: 5rem;
+    color: #fafafa;
+    opacity: .7;
+   
+}
+
+.me  .text h3{
+    font-size: 2.4rem;
+    font-weight: 100;
+    font-family: "aldrich",sans-serif;
+    color: #fafafa;
+    opacity: .5;
+}
+.me .img-box {
+    
+    height: 300px;
+    width: 300px;
+    position: relative;
+    
+}
+
+
+.me .img-box img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/***************************************** CONTACT ***************************************/
+
+#contact {
+   
+   height: 70vh;
+    background-size: cover  ;
+}
+
+#contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.container h3{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.986);
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+    
+}
+
+form{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+     
+}
+form label{
+    color: #fafafa;
+}
+form input{
+    padding: 10px 40px;
+    border-collapse: collapse;
+    
+}
+
+textarea{
+    resize: none;
+    padding: 10px 40px;
+}
+
+form input[type="submit"]{
+    padding: 10px 30px ;
+    display: inline-block;
+    margin: 10px 0 20px;
+    border-radius: 20px;
+    color: #fafafa;
+    background :rgb(148, 0, 207);
+    text-align: center;
+}
+
+/************************************* media *************************************/
+
+@media  screen and (max-width:990px){
+
+
+.hero .text {
+    margin: 0 0 0 10rem;
+         
+    }
+
+    .about .row{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0px;
+    
+    }
+
+    .about .row .col50{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media  screen and (max-width:990px){
+    .col50 h1,p{
+        color: rgba(0, 0, 0, 0.712);
+        font-size: 1.5rem;
+        line-height: 1.4rem;
+    }
+}
+@media  screen and (max-width:768px){
+    .hero::before{
+        background: url(images/wave-medium.png)center no-repeat;background-size: cover;
+        width: 100%;
+        height: 8rem    ;
+    }
+}
+
+@media  screen and (max-width:560px){
+    .col50{
+        height: 370px;
+    }
+    .col50 h1,p{
+        color: rgba(0, 0, 0, 0.712);
+        font-size: 1.3rem;
+    }
+    
+.text h4{
+    font-size: 1.4rem;
+}
+.text p{
+    font-size: 1.2rem;
+}
+.text h1 {
+    font-size: 1.8rem;
+}
+.text h1 span{
+    font-size:2.2rem;
+}
+
+.contact .container{
+   margin-left: -2rem;
+}
+.about a{
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+}
+
+
+@media  screen and (max-width:450px){
+    
+    .hero::before{
+        background: url(images/wave-small.png)center no-repeat;background-size: cover;
+        width: 100%;
+        height: 7.4rem ;
+    }
+    
+    .hero .text{
+        margin: 0 0 0 5rem;
+             
+        }
+        .hero .text{
+            margin: 0 0 0 2.5rem;
+                 
+            }
+          
+            .me .text h3{
+                font-size: 1.7rem;
+            }
+}
+
+@media  screen and (max-width:350px){
+    .col50 h1,p{
+        color: rgba(0, 0, 0, 0.712);
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+
+    }
+}
+
+
+
