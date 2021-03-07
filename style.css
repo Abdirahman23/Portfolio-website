@@ -687,7 +687,10 @@ form input[type="submit"]{
                  
             }
           
-            .me .text h3{
+     .about .col-1{
+        margin: 0 2rem;
+    }   
+    .me .text h3{
                 font-size: 1.7rem;
             }
 }
